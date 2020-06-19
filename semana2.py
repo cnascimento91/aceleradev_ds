@@ -34,6 +34,7 @@ def main():
         st.markdown('**Contagem dos tipos de dados:**')
         st.write(exploracao.tipos.value_counts())
         st.markdown('**Nomes das colunas do tipo int64:**')
+        #filtra o dataframe exploracao[exploracao['tipos'] == 'int64'] com dados = int64
         st.markdown(list(exploracao[exploracao['tipos'] == 'int64']['nomes']))
         st.markdown('**Nomes das colunas do tipo float64:**')
         st.markdown(list(exploracao[exploracao['tipos'] == 'float64']['nomes']))
@@ -54,7 +55,7 @@ def main():
             st.subheader('Dados Inputados faça download abaixo : ')
             st.markdown(get_table_download_link(df_inputado), unsafe_allow_html=True)
         if select_method == 'Mediana':
-            df_inputado = df[lista_colunas].fillna(df[lista_colunas].mean())
+            df_inputado = df[lista_colunas].fillna(df[lista_colunas].median())
             exploracao_inputado = pd.DataFrame({'nomes': df_inputado.columns, 'tipos': df_inputado.dtypes, 'NA #': df_inputado.isna().sum(),
                                        'NA %': (df_inputado.isna().sum() / df_inputado.shape[0]) * 100})
             st.table(exploracao_inputado[exploracao_inputado['tipos'] != 'object']['NA %'])
