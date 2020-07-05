@@ -25,9 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab3c7484-468f-4202-bc04-260a21a4ecaa" name="Default Changelist" comment="inserindo comentários e corrigindo alguns erros de calculo da semana2">
-      <change beforePath="$PROJECT_DIR$/data-science-0/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data-science-0/main.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="ab3c7484-468f-4202-bc04-260a21a4ecaa" name="Default Changelist" comment="inserindo comentários e corrigindo alguns erros de calculo da semana2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
